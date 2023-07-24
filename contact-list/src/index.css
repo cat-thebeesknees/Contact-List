@@ -54,6 +54,31 @@ button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
+button.goBack {
+  background-color: #213547;
+  color: wheat;
+  border: solid 1px white;
+}
+div.contactInfo {
+  border: solid 4px black;
+  background-color: slategrey;
+}
+body {
+  background-color: rgb(52, 78, 65);
+}
+table {
+  background-color: rgb(163, 177, 138);
+  border: solid 6px rgb(218, 215, 205);
+  padding: 10px;
+}
+td {
+  padding: 5px;
+  color: rgb(58, 90, 64);
+  font-size: large;
+}
+th {
+  font-size: xx-large;
+}
 
 @media (prefers-color-scheme: light) {
   :root {
