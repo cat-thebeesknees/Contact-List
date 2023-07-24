@@ -1,5 +1,5 @@
 //create a selected contact file and add it to the componets file
-import React from "react";
+
 import { useEffect, useState } from "react";
 import PropTypes from "prop-types";
 
@@ -26,7 +26,7 @@ export default function SelectedContact({
       }
     };
     fetchContact();
-  }, []);
+  }, [selectedContactId]);
 
   return (
     <>
@@ -60,4 +60,9 @@ export default function SelectedContact({
     </>
   );
 }
+
+SelectedContact.propTypes = {
+    selectedContactId: PropTypes.number.isRequired,
+    setSelectedContactId: PropTypes.func.isRequired,
+  };
 export { PropTypes };

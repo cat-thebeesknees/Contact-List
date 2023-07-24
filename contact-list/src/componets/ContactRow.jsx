@@ -1,4 +1,4 @@
-import React from "react";
+
 import PropTypes from "prop-types";
 
 export default function ContactRow({ setSelectedContactId, contact }) {
@@ -14,4 +14,12 @@ export default function ContactRow({ setSelectedContactId, contact }) {
     </tr>
   );
 }
-export { PropTypes };
+ContactRow.propTypes = {
+  setSelectedContactId: PropTypes.func.isRequired,
+  contact: PropTypes.shape({
+    id: PropTypes.number.isRequired,
+    name: PropTypes.string.isRequired,
+    email: PropTypes.string.isRequired,
+    phone: PropTypes.string.isRequired,
+  }).isRequired,
+};
